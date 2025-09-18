@@ -46,7 +46,9 @@
           >
             Contact
           </button>
-          <BaseButton>Acquire us</BaseButton>
+          <BaseButton class="text-base font-medium font-sf-pro-display"
+            >Acquire us</BaseButton
+          >
         </div>
       </div>
 
@@ -156,7 +158,10 @@
             >
               Contact
             </button>
-            <BaseButton class="w-full justify-center" @click="closeMobileMenu">
+            <BaseButton
+              class="w-full justify-center font-sf-pro-display text-base font-medium"
+              @click="closeMobileMenu"
+            >
               Acquire us
             </BaseButton>
           </div>

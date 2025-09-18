@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <main class="w-full overflow-hidden">
     <Header />
     <slot />
     <Footer />
-  </div>
+  </main>
 </template>
 
 <script setup>

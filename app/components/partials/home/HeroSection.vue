@@ -14,7 +14,7 @@
         <div class="max-w-[1500px] h-full mx-auto flex px-4">
           <div class="my-auto max-w-[591px] flex flex-col gap-6">
             <h1
-              class="text-secondary font-poppins md:text-6xl text-4xl font-semibold"
+              class="text-secondary font-poppins md:text-[54px] md:leading-[72px] text-4xl font-semibold"
             >
               Happy paws, <br />
               wagging tails, and <br />

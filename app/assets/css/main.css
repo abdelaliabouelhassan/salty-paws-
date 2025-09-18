@@ -1,1 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* SF Pro Display Font Faces */
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYLIGHTITALIC.OTF")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYSEMIBOLDITALIC.OTF")
+    format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYBLACKITALIC.OTF")
+    format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYHEAVYITALIC.OTF")
+    format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYTHINITALIC.OTF")
+    format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYULTRALIGHTITALIC.OTF")
+    format("opentype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #af4c0f;
+  --color-secondary: #f5f1e8;
+  /* --color-septenary: #000000;
+  --color-octonary: #000000; */
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-sf-pro-display: "SF Pro Display", "Poppins", sans-serif;
+}

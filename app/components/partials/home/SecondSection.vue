@@ -2,7 +2,7 @@
   <section
     class="w-full bg-primary/35 px-4 py-20 md:py-40 relative overflow-hidden"
   >
-    <div class="w-full max-w-[1320px] mx-auto relative z-10">
+    <div class="w-full max-w-[1320px] mx-auto relative z-40">
       <div
         class="flex items-start w-full md:flex-row flex-col md:justify-between gap-8 md:gap-4"
       >

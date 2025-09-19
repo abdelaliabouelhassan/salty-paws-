@@ -5,6 +5,7 @@
   <ThirdSection />
   <FourthSection />
   <FifthSection />
+  <SixthSection />
   <EightSection />
 </template>
 
@@ -15,6 +16,7 @@ import SecondSection from "@/components/partials/home/SecondSection.vue";
 import ThirdSection from "@/components/partials/home/ThirdSection.vue";
 import FourthSection from "@/components/partials/home/FourthSection.vue";
 import FifthSection from "@/components/partials/home/FifthSection.vue";
+import SixthSection from "@/components/partials/home/SixthSection.vue";
 import EightSection from "@/components/partials/home/EightSection.vue";
 import { useHead } from "#app";
 

@@ -19,7 +19,9 @@
 
     <Carousel v-bind="carouselConfig">
       <Slide v-for="slide in slides" :key="slide.src">
-        <div class="carousel__item w-full max-w-[550px] h-[525px]">
+        <div
+          class="carousel__item w-full max-w-[370px] md:max-w-[550px] h-[525px]"
+        >
           <div class="w-full h-full overflow-hidden rounded-lg">
             <img
               :src="slide.src"

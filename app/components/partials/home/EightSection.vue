@@ -1,5 +1,8 @@
 <template>
   <section class="w-full relative">
+    <div class="absolute -top-60 left-50 md:block hidden">
+      <img src="/assets/img/steps.png" alt="" />
+    </div>
     <div>
       <img
         src="/assets/img/EightSection/img1.webp"

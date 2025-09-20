@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <Carousel v-bind="carouselConfig">
+    <Carousel v-bind="carouselConfig" v-show="show">
       <Slide v-for="slide in slides" :key="slide.src">
         <div
           class="carousel__item w-full max-w-[370px] md:max-w-[550px] h-[525px]"
@@ -46,6 +46,8 @@ const carouselConfig = {
   wrapAround: true,
 };
 
+const show = ref(false);
+
 const slides = [
   {
     src: "/assets/img/FirstSection/img1.png",
@@ -63,6 +65,12 @@ const slides = [
     src: "/assets/img/FirstSection/img5.png",
   },
 ];
+
+onMounted(() => {
+  setTimeout(() => {
+    show.value = true;
+  }, 1000);
+});
 </script>
 
 <style scoped>

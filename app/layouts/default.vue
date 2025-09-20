@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full overflow-hidden">
+  <main class="w-full overflow-hidden relative">
     <Header />
     <slot />
     <Footer />

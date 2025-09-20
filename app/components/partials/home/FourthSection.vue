@@ -80,11 +80,13 @@
             :title="slide.title"
             :description="slide.description"
             :src="slide.src"
+            :openModal="() => readMoreModal.openModal(slide.details)"
           />
         </div>
       </Slide>
     </Carousel>
   </section>
+  <ReadMoreModal ref="readMoreModal" />
 </template>
 
 <script setup>
@@ -93,7 +95,8 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import ReadMoreCard from "@/components/UI/ReadMoreCard.vue";
 const carouselRef = ref(null);
 const currentSlide = ref(0);
-
+import ReadMoreModal from "@/components/UI/ReadMoreModal.vue";
+const readMoreModal = ref(null);
 const carouselConfig = {
   wrapAround: true,
   gap: 15,
@@ -107,6 +110,18 @@ const slides = [
     description:
       "Busy day ahead? Drop your dog off for a fun-filled day of play, cuddles, and companionship.",
     width: "md:w-[751px]",
+    details: {
+      title: "Dog Daycare",
+      description: `Busy day ahead? Drop your dog off for a fun-filled day of play, cuddles, and companionship. <br> <br> Our daycare provides a safe space where they can burn energy, make friends, and enjoy structured activities — so when you pick them up, they’re happy and relaxed.`,
+      included: ["Playtime & Exercise", "Socialization", "Meals/snacks"],
+      durationOptions: "Half day / Full day",
+      price: "25.00€",
+      images: [
+        "/assets/img/FourthSection/img6.png",
+        "/assets/img/FourthSection/img1.png",
+        "/assets/img/FourthSection/img5.png",
+      ],
+    },
   },
   {
     src: "/assets/img/FourthSection/img2.png",
@@ -114,6 +129,18 @@ const slides = [
     description:
       "From cozy nights to playful days, we keep them active, loved, and cared for.",
     width: " md:w-[399px]",
+    details: {
+      title: "Dog Boarding",
+      description: `Busy day ahead? Drop your dog off for a fun-filled day of play, cuddles, and companionship. <br> <br> Our daycare provides a safe space where they can burn energy, make friends, and enjoy structured activities — so when you pick them up, they’re happy and relaxed.`,
+      included: ["Playtime & Exercise", "Socialization", "Meals/snacks"],
+      durationOptions: "Half day / Full day",
+      price: "25.00€",
+      images: [
+        "/assets/img/FourthSection/img1.png",
+        "/assets/img/FourthSection/img7.png",
+        "/assets/img/FourthSection/img8.png",
+      ],
+    },
   },
   {
     src: "/assets/img/FourthSection/img3.png",
@@ -121,6 +148,22 @@ const slides = [
     description:
       "Fresh air, exercise, and adventure — every pup deserves a good walk!",
     width: "md:w-[399px]",
+    details: {
+      title: "Dog Walking",
+      description: `Fresh air, exercise, and adventure — every pup deserves a good walk! Whether your dog loves a gentle stroll or a more energetic outing, we make sure their walk is safe, fun, and tailored to their needs. <br> <br> Expect happy paws, wagging tails, and a content friend waiting for you when you get home.`,
+      included: [
+        "Tailored walks to match your dog’s energy",
+        "Water breaks",
+        "Playtime & Plenty of sniffs along the way",
+      ],
+      durationOptions: "30 minutes / 60 minutes",
+      price: "15.00€",
+      images: [
+        "/assets/img/FourthSection/img3.png",
+        "/assets/img/FourthSection/img9.png",
+        "/assets/img/FourthSection/img10.png",
+      ],
+    },
   },
   {
     src: "/assets/img/FourthSection/img4.png",
@@ -128,13 +171,45 @@ const slides = [
     description:
       "Expect happy paws, wagging tails, and a content friend waiting for you when you get home.",
     width: "md:w-[760px]",
+    details: {
+      title: "Dog Training",
+      description: `Do you have a detailed process to add? not really, i usually create a plan acoording too what the costumer would like fix with his dog. <br> <br> Training should be fun, not stressful. With patience and positive reinforcement, we help your dog build good habits and strengthen your bond. Whether it’s basic manners, leash etiquette, or tackling specific challenges, we’ll guide your pup step by step in a calm, supportive way.`,
+      included: [
+        "Positive reinforcement sessions",
+        "Practice exercises",
+        "Breaks for water & treats",
+      ],
+      durationOptions: "30 minutes / 60 minutes",
+      price: "25.00€",
+      images: [
+        "/assets/img/FourthSection/img4.png",
+        "/assets/img/FourthSection/img11.png",
+        "/assets/img/FourthSection/img12.png",
+      ],
+    },
   },
   {
     src: "/assets/img/FourthSection/img5.png",
-    title: "Pet Sitting (Dog & Cat)",
+    title: "Pet Sitting (Dog & Cat – Owner’s House)",
     description:
       "Sometimes the best care is in the comfort of home. We’ll visit your pets where they feel safest, keeping their routine as normal as possible.",
     width: "md:w-[751px]",
+    details: {
+      title: "Pet Sitting (Dog & Cat)",
+      description: `Sometimes the best care is in the comfort of home. We’ll visit your pets where they feel safest, keeping their routine as normal as possible. <br> <br> From feeding and play to cuddles and health check-ins, we give your pets all the love and attention they need while you’re away — so you return to happy paws and purrs.`,
+      included: [
+        "Feeding, water refresh",
+        "Playtime & cuddles",
+        "Litter cleaning or walks",
+      ],
+      durationOptions: "30 minutes / 60 minutes",
+      price: "15.00€",
+      images: [
+        "/assets/img/FourthSection/img13.png",
+        "/assets/img/FourthSection/img14.png",
+        "/assets/img/FourthSection/img15.png",
+      ],
+    },
   },
 ];
 

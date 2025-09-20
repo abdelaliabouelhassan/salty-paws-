@@ -34,7 +34,7 @@
                 >Contact</BaseButton
               >
               <BaseButton
-                class="!bg-[#F5F1E80D] border-2 border-secondary"
+                class="!bg-[#F5F1E80D] border-2 text-lg border-secondary"
                 style="backdrop-filter: blur(45px)"
                 >Let’s talk</BaseButton
               >

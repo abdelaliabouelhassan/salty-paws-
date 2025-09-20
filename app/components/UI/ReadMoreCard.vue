@@ -12,6 +12,7 @@
         class="absolute hidden group-hover:flex duration-200 top-0 left-0 w-full h-full justify-center items-center p-4"
       >
         <BaseButton
+          @click="openModal()"
           class="text-lg font-semibold font-poppins text-secondary border border-[#FFFFFF26]"
           style="backdrop-filter: blur(4px)"
           >See more</BaseButton
@@ -44,6 +45,10 @@ const props = defineProps({
   },
   src: {
     type: String,
+    required: true,
+  },
+  openModal: {
+    type: Function,
     required: true,
   },
 });

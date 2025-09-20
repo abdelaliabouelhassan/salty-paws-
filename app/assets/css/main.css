@@ -94,3 +94,8 @@
 body {
   @apply bg-secondary;
 }
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

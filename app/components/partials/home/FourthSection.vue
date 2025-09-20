@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10 md:py-20">
+  <section class="py-10 md:py-20" id="services">
     <div class="w-full max-w-[1304px] mx-auto px-4 pb-10">
       <div class="w-full flex justify-between items-end py-5">
         <div class="flex flex-col gap-4">

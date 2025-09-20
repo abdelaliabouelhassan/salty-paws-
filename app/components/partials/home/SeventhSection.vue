@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10 md:pb-40">
+  <section class="py-10 md:pb-40" id="faqs">
     <div class="text-center">
       <h2
         class="text-septenary font-sf-pro-display font-semibold text-4xl mb-14"

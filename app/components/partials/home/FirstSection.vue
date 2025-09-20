@@ -32,19 +32,14 @@
         </div>
       </Slide>
     </Carousel>
-
-    <div class="py-14">
-      <LoopLine />
-    </div>
   </section>
 </template>
 
 <script setup>
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
-import LoopLine from "@/components/UI/LoopLine.vue";
 const carouselConfig = {
   wrapAround: true,
-  autoplay: 3000,
+  autoplay: 2000,
   pauseAutoplayOnHover: true,
   gap: 15,
   itemsToShow: "auto",
